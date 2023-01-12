@@ -1,3 +1,4 @@
+
 body{
     margin: 0;
     padding: 0;
@@ -20,7 +21,7 @@ header{
     display: flex;           /* establish flex container */
     flex-direction: row;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    margin-right: 8rem;
+    margin-right: 3rem;
 }
 .searchbar input[type=text] {
     background-color: #fff;
@@ -30,7 +31,7 @@ header{
     outline: 0 none;
     font-size: 14px;
     height: 36px;
-    width: 25rem;
+    width: 30rem;
 }
 .search_button{
     padding: 0 16px;
@@ -52,25 +53,25 @@ header{
     height: 32px;
     padding: 5px 40px;
     border: 1px solid #dbdbdb;
-    margin-right: 15px;
+    margin-right: 3rem;
     margin-left: 2rem;
 }
-.become_a_seller a{
-    margin-right: 15px;
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    cursor: pointer;
+.menu{
+    margin-right: 3rem;
 }
 .menu a{
-    margin-right: 15px;
     text-decoration: none;
     color: #fff;
     font-weight: bold;
     cursor: pointer;
+    vertical-align: middle;
+}
+#menu-arrow{
+    font-size: 20px;
+    color: #fff;
 }
 .cart a{
-    margin-right: 15px;
+    margin-right: 1rem;
     text-decoration: none;
     color: #fff;
     font-weight: bold;
@@ -91,17 +92,21 @@ header{
     flex-direction: column; 
     justify-content: center;
     align-items: center;
-    margin-right: 70px;   
+    margin-right: 70px;  
 }
 .topoffer a{
     text-decoration: none;
     color: rgb(83, 83, 83);
-    font-weight: 700;
+    font-weight: bold;
     cursor: pointer;
-    font-size: 15px;
+    text-align: center;
+    font-size: 14px;
 }
 .topoffer a:hover{
     color: #2874f0;
+}
+#top-offer-down-arrow{
+    font-size: 1px;
 }
 .main_body{
     margin-top: 1.5rem;
@@ -111,25 +116,191 @@ header{
     justify-content: center;
     align-items: center;   
 }
+.main_body_grid_container{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+}
+.deals_of_the_day_parents{
+    display: flex;
+    flex-direction: row; 
+    width:100%;
+}
 .deals_of_the_day{
     width: 85%;
+    margin-right: 0.5rem;
+    display: flex;
+    flex-direction: column;  
+}
+.heading_deals_of_the_day{
+    display: flex;
+    flex-direction: row;
+}
+.heading_deals_the_day_stopwatch{
+    width: 70%;
+    padding:15px 0px 15px 15px;
     background-color: #fff;
-    padding: 15px 0px 15px 15px;
-    font-size: 20px;
+    font-size: large;
     font-weight: bold;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    vertical-align: center;
+    align-items: center;
 }
-.headings_deals_of_the_day{
+#deals_of_the_day_stopwatch{
+    font-size: 15px;
+    color: #9e9d9d;
+}
+.heading_deals_of_the_day_viewbutton{
+    width: 30%;
+    padding:10px 15px 10px 15px;
+    background-color: #fff;
+}
+.heading_deals_of_the_day button{
+    float: right;
+    border: 0px;
+    border-radius: 2px;
+    color: #fff;
+    background-color: #2874f0;
+    padding: 10px 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.items_deals_of_the_day{
+    background-color: #fff;
+    width: 100%;
+    display: flex;           
+    flex-direction: row;  
+    overflow: hidden;
+    align-items: center; 
+    margin-top: 0.1rem;
+    padding-bottom: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 1.50px 0px;
+    position: relative;
+}
+.items_image_deals_of_the_day{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    position: relative;
+}
+.big-billion{
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 1.50px 0px;
+}
+.big-billion img{
+    width: 100%;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 1.50px 0px;
+}
+
+.deals_of_the_day_item_name{
+    width: 80%;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     text-align: center;
-    padding: 15px 0px 15px 15px;
-    width: 85%;
-    
 }
-.deals_of_the_day_stopwatch{
+.deals_of_the_day_item_discount{
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #388e3c;
+    padding-top: 8px;
+    text-align: center;
+}
+.deals_disclaimer{
+    opacity: .6;
+    padding-top: 7px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+.books-music{
+    width:100%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+.book-music-heading{
+    width: 70%;
+    padding:15px 0px 15px 15px;
+    background-color: #fff;   
+    display: flex;
+    vertical-align: center;
+    flex-direction: column; 
+}
+.book-music-heading-first{
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.book-music-heading-shop-now{
+    opacity: .6;
     font-size: small;
-    color: #9b9b9b;
-    font-style:inherit;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.deals_of_the_day_items{
-    margin-top: 1.rem;
+.book-music-view-all-button{
+    width: 30%;
+    padding:10px 15px 10px 15px;
+    background-color: #fff;
+    justify-content: end;
+    display: flex;
+    vertical-align: center;
+    align-items: center;
+
+}
+.book-music-view-all-button button{
+    border: 0px;
+    border-radius: 2px;
+    color: #fff;
+    background-color: #2874f0;
+    padding: 10px 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.book-musical-instrument-items{
+    background-color: #fff;
+    width: 100%;
+    display: flex;           
+    flex-direction: row;  
+    overflow: hidden;
+    align-items: center; 
+    margin-top: 0.15rem;
+    padding-bottom: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 1.50px 0px;
+}
+.left_scroll{
+    position: absolute;
+    left: 0;
+    opacity: 0.5;
+}
+.left_scroll button{
+    padding: 40px 15px;
+    box-shadow: 1px 2px 10px -1px rgb(0 0 0 / 30%);
+    background-color: hsla(0,0%,100%,.98);
+    cursor: pointer;
+    opacity: 0.6;
+    border: none;    
+}
+.leftscroll::before{
+
+}
+.right_scroll{
+    position: absolute;
+    right: 0;
+}
+.right_scroll button{
+    padding: 40px 15px;
+    box-shadow: 1px 2px 10px -1px rgb(0 0 0 / 30%);
+    background-color: hsla(0,0%,100%,.98);
+    cursor: pointer;
+    opacity: 0.6;
+    border: none;    
 }
