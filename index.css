@@ -276,22 +276,23 @@ header{
     padding-bottom: 2rem;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 1.50px 0px;
 }
-.left_scroll{
-    position: absolute;
-    left: 0;
-    opacity: 0.5;
+/* .left_scroll{
+    z-index: 1;
+    
 }
 .left_scroll button{
     padding: 40px 15px;
     box-shadow: 1px 2px 10px -1px rgb(0 0 0 / 30%);
     background-color: hsla(0,0%,100%,.98);
     cursor: pointer;
-    opacity: 0.6;
+    opacity: 0.5;
     border: none;    
 }
-.leftscroll::before{
+.left_scroll:hover{
+    opacity: 1;
+    box-shadow: 1px 2px 10px -1px rgb(0 0 0 / 20%);
 
-}
+} */
 .right_scroll{
     position: absolute;
     right: 0;
@@ -301,6 +302,11 @@ header{
     box-shadow: 1px 2px 10px -1px rgb(0 0 0 / 30%);
     background-color: hsla(0,0%,100%,.98);
     cursor: pointer;
-    opacity: 0.6;
     border: none;    
+    opacity: 0.5;
+}
+.right_scroll:hover{
+    opacity: 1;
+    box-shadow: 1px 2px 10px -1px rgb(0 0 0 / 20%);
+
 }
