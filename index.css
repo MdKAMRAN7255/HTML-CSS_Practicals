@@ -36,7 +36,9 @@ header{
    font-size: 15px;
    font-style: italic;
 }
-
+.flipkart-logo a:hover{
+    text-decoration: underline;
+}
 .searchbar{
     display: flex;           
     flex-direction: row;
@@ -400,6 +402,7 @@ header{
     .heading_deals_of_the_day_viewbutton{
         display: flex;
         align-items: center;
+        justify-content: end;
     }
     .second-header-main{
         width: 100%;
