@@ -148,6 +148,7 @@ header{
     cursor: pointer;
     text-align: center;
     font-size: 14px;
+    width: 150px;
 }
 .topoffer a:hover{
     color: #2874f0;
@@ -416,7 +417,7 @@ header{
         align-items: center;
     }
     .topoffer{
-        padding-left: 1rem;
+        padding-left: 0.5rem;
     }
   }
   @media screen and (max-width: 930px){
