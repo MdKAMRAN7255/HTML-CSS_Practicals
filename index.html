@@ -8,12 +8,19 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <link rel="stylesheet" type="" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
   <nav class="navbar navbar-expand-md navbar-light bg-primary px-2 px-md-0">
     <div
-      class="first-section col-12 col-md-7 d-flex flex-column flex-md-row justify-content-end align-items-md-center navbar-brand">
+      class="first-section col-12 col-md-6 d-flex flex-column flex-md-row justify-content-start justify-content-md-end align-items-md-center navbar-brand">
       <div class="flipkart-logo mr-3">
         <img style="display:block" src="./navbar/Flipkart.png" width="75vw" height="20vh" alt="">
         <a href="#" class="m-0 p-0">Explore <span style="color: yellow;">Plus </span></a>
@@ -57,46 +64,96 @@
     </div>
   </nav>
   <div class=" second_header shadow-sm w-100 d-flex justify-content-center">
-    <div class="wrapper  d-flex justify-content-md-around px-2 d-flex col-12 col-md-10 col-lg-8 py-3">
-        <div class="topoffer px-2 px-md-0 px-2 px-md-0 d-flex flex-column align-items-center">
-            <img src="./second_navbar_items/top_offers.png" width="64px" height="64px" alt="">
-            <a href="#">Top Offers</a>
+    <div
+      class="wrapper  d-flex justify-content-md-start justify-content-lg-around px-2 px-md-0 d-flex col-12 col-md-12 col-lg-9 py-3">
+      <div class="topoffer px-2 px-md-0 px-2 px-md-0 d-flex flex-column align-items-center">
+        <img src="./second_navbar_items/top_offers.png" width="64px" height="64px" alt="">
+        <a href="#" style="width: 100px;">Top Offers</a>
+      </div>
+      <div class="topoffer px-2 px-lg-0 d-flex flex-column align-items-center">
+        <img src="./second_navbar_items/grocerry.png" width="64px" height="64px" alt="">
+        <a href="#">Grocery</a>
+      </div>
+      <div class="topoffer px-2 px-lg-0 d-flex flex-column align-items-center">
+        <img src="./second_navbar_items/mobiles.png" width="64px" height="64px" alt="">
+        <a href="#">Mobiles</a>
+      </div>
+      <div class="topoffer px-2 px-lg-0 d-flex flex-column align-items-center">
+        <img src="./second_navbar_items/fashion.png" width="64px" height="64px" alt="">
+        <div class="second_navbar_item_label d-flex align-items-center">
+          <a href="#" id="dropdownMenuLink" data-toggle="dropdown">Fashion&nbsp;</a>
+          <span class="down-arrow">&#x2304;</span>
+          <div class="dropdown-menu drop-menu" aria-labelledby="dropdownMenuLink" style="z-index: 1;">
+            <a href="#" class="dropdown-item">Phone</a>
+            <hr class="dropdown-divider">
+            <a href="#" class="dropdown-item">Tablet</a>
+            <hr class="dropdown-divider">
+            <a href="#" class="dropdown-item">Accessories</a>
           </div>
-          <div class="topoffer px-2 px-md-0 d-flex flex-column align-items-center">
-            <img src="./second_navbar_items/grocerry.png" width="64px" height="64px" alt="">
-            <a href="#">Grocery</a>
+        </div>
+      </div>
+      <div class="topoffer px-2 px-lg-0 d-flex flex-column align-items-center">
+        <img src="./second_navbar_items/electronic.png" width="64px" height="64px" alt="">
+        <div class="second_navbar_item_label d-flex align-items-center">
+          <a href="#" id="dropdownMenuLink" data-toggle="dropdown">Electronic&nbsp;</a>
+          <span class="down-arrow">&#x2304;</span>
+          <div class="dropdown-menu drop-menu" aria-labelledby="dropdownMenuLink" style="z-index: 1;">
+            <a href="#" class="dropdown-item">Phone</a>
+            <hr class="dropdown-divider">
+            <a href="#" class="dropdown-item">Tablet</a>
+            <hr class="dropdown-divider">
+            <a href="#" class="dropdown-item">Accessories</a>
           </div>
-          <div class="topoffer px-2 px-md-0 d-flex flex-column align-items-center">
-            <img src="./second_navbar_items/mobiles.png" width="64px" height="64px" alt="">
-            <a href="#">Mobiles</a>
+        </div>
+      </div>
+      <div class="topoffer px-2 px-lg-0 d-flex flex-column align-items-center">
+        <img src="./second_navbar_items/homes.png" width="64px" height="64px" alt="">
+        <div class="second_navbar_item_label d-flex align-items-center">
+          <a href="#" id="dropdownMenuLink" data-toggle="dropdown">Home&nbsp;</a>
+          <span class="down-arrow">&#x2304;</span>
+          <div class="dropdown-menu drop-menu" aria-labelledby="dropdownMenuLink" style="z-index: 1;">
+            <a href="#" class="dropdown-item">Phone</a>
+            <hr class="dropdown-divider">
+            <a href="#" class="dropdown-item">Tablet</a>
+            <hr class="dropdown-divider">
+            <a href="#" class="dropdown-item">Accessories</a>
           </div>
-          <div class="topoffer px-2 px-md-0 d-flex flex-column align-items-center">
-            <img src="./second_navbar_items/fashion.png" width="64px" height="64px" alt="">
-            <a href="#" class="text-center" data-toggle="dropdown">Fashion <span>&#x2304;</span></a>
+        </div>
+      </div>
+      <div class="topoffer px-2 px-lg-0 d-flex flex-column align-items-center">
+        <img src="./second_navbar_items/appliances.png" width="64px" height="64px" alt="">
+        <div class="second_navbar_item_label d-flex align-items-center">
+          <a href="#" id="dropdownMenuLink" data-toggle="dropdown">Appliances&nbsp;</a>
+          <span class="down-arrow">&#x2304;</span>
+          <div class="dropdown-menu drop-menu" aria-labelledby="dropdownMenuLink" style="z-index: 1;">
+            <a href="#" class="dropdown-item">Phone</a>
+            <hr class="dropdown-divider">
+            <a href="#" class="dropdown-item">Tablet</a>
+            <hr class="dropdown-divider">
+            <a href="#" class="dropdown-item">Accessories</a>
           </div>
-          <div class="topoffer px-2 px-md-0 d-flex flex-column align-items-center">
-            <img src="./second_navbar_items/electronic.png" width="64px" height="64px" alt="">
-            <a href="#">Electronic <span>&#x2304;</span></a>
+        </div>
+      </div>
+      <div class="topoffer px-2 px-lg-0 d-flex flex-column align-items-center">
+        <img src="./second_navbar_items/travel.png" width="64px" height="64px" alt="">
+        <a href="#">Travel</a>
+      </div>
+      <div class="topoffer px-2 px-md-0 d-flex flex-column align-items-center">
+        <img src="./second_navbar_items/beauty,toys&more.png" width="64px" height="64px" alt="">
+        <div class="second_navbar_item_label d-flex align-items-center" style="width: 200px;">
+          <a href="#" id="dropdownMenuLink" data-toggle="dropdown">Beauty, Toys & More&nbsp;</a>
+          <span class="down-arrow ">&#x2304;</span>
+          <div class="dropdown-menu drop-menu" aria-labelledby="dropdownMenuLink" style="z-index: 1;">
+            <a href="#" class="dropdown-item drop-menu">Phone</a>
+            <hr class="dropdown-divider">
+            <a href="#" class="dropdown-item">Tablet</a>
+            <hr class="dropdown-divider">
+            <a href="#" class="dropdown-item">Accessories</a>
           </div>
-          <div class="topoffer px-2 px-md-0 d-flex flex-column align-items-center">
-            <img src="./second_navbar_items/homes.png" width="64px" height="64px" alt="">
-            <a href="#">Home <span>&#x2304;</span></a>
-          </div>
-          <div class="topoffer px-2 px-md-0 d-flex flex-column align-items-center">
-            <img src="./second_navbar_items/appliances.png" width="64px" height="64px" alt="">
-  
-            <a href="#">Appliances <span>&#x2304;</span></a>
-          </div>
-          <div class="topoffer px-2 px-md-0 d-flex flex-column align-items-center">
-            <img src="./second_navbar_items/travel.png" width="64px" height="64px" alt="">
-            <a href="#">Travel</a>
-          </div>
-          <div class="topoffer px-2 px-md-0 d-flex flex-column align-items-center">
-            <img src="./second_navbar_items/beauty,toys&more.png" width="64px" height="64px" alt="">
-            <a href="#">Beauty, Toys & More <span>&#x2304;</span></a>
-          </div>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
 
   <div class="main-body d-flex  justify-content-md-center">
     <!-- body which contain different section intitally with 80% -->
@@ -117,60 +174,83 @@
           </div>
 
           <div class="deals-item d-flex align-items-center col-12 mt-2 pt-1 pb-5">
-            <div class="left_scroll align-middle">
-              <button>❮</button>
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <div class="items_image_deals_of_the_day d-flex flex-column align-items-center justify-content-center">
+                  <a href="#"><img src="./Deals_of_the_day/watch.png" width="200px" height="200px" alt=""></a>
+                  <div class="deals_of_the_day_item_name">casio, Fastrack, sonata</div>
+                  <div class="deals_of_the_day_item_discount">Upto 80%+Extra 10%Off</div>
+                  <div class="deals_disclaimer">Knockout Deals!</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="items_image_deals_of_the_day d-flex flex-column align-items-center justify-content-center">
+                  <a href="#"><img src="./Deals_of_the_day/metronaut.png" width="200px" height="200px" alt=""></a>
+                  <div class="deals_of_the_day_item_name">Metronaut, Provogue & Addidas</div>
+                  <div class="deals_of_the_day_item_discount">From 249+Extra10%Off</div>
+                  <div class="deals_disclaimer">Jackets, Dresses & More</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="items_image_deals_of_the_day d-flex flex-column align-items-center justify-content-center">
+                  <a href="#"><img src="./Deals_of_the_day/metronaut.png" width="200px" height="200px" alt=""></a>
+                  <div class="deals_of_the_day_item_name">Metronaut, Provogue & Addidas</div>
+                  <div class="deals_of_the_day_item_discount">From 249+Extra10%Off</div>
+                  <div class="deals_disclaimer">Jackets, Dresses & More</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="items_image_deals_of_the_day d-flex flex-column align-items-center justify-content-center">
+                  <a href="#"><img src="./Deals_of_the_day/temple.png" width="200px" height="200px" alt=""></a>
+                  <div class="deals_of_the_day_item_name">Home Temples & more</div>
+                  <div class="deals_of_the_day_item_discount">Extra 10% off</div>
+                  <div class="deals_disclaimer">Space Saving furniture</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="items_image_deals_of_the_day d-flex flex-column align-items-center justify-content-center ">
+                  <a href="#"><img src="./Deals_of_the_day/tablet.png" width="200px" height="200px" alt=""></a>
+                  <div class="deals_of_the_day_item_name">Premium Tablet Cases</div>
+                  <div class="deals_of_the_day_item_discount">Extra 10% Off</div>
+                  <div class="deals_disclaimer">For All Top Models</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="items_image_deals_of_the_day d-flex flex-column align-items-center justify-content-center">
+                  <a href="#"><img src="./Deals_of_the_day/decor.png" width="200px" height="200px" alt=""></a>
+                  <div class="deals_of_the_day_item_name">Best Of Home Decor</div>
+                  <div class="deals_of_the_day_item_discount">from 79</div>
+                  <div class="deals_disclaimer">Lowest Price Ever</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="items_image_deals_of_the_day d-flex flex-column align-items-center justify-content-center">
+                  <a href="#"><img src="./Deals_of_the_day/metronaut.png" width="200px" height="200px" alt=""></a>
+                  <div class="deals_of_the_day_item_name">Metronaut, Provogue & Addidas</div>
+                  <div class="deals_of_the_day_item_discount">From 249+Extra10%Off</div>
+                  <div class="deals_disclaimer">Jackets, Dresses & More</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="items_image_deals_of_the_day d-flex flex-column align-items-center justify-content-center">
+                  <a href="#"><img src="./Deals_of_the_day/lava.png" width="200px" height="200px" alt=""></a>
+                  <div class="deals_of_the_day_item_name">LAVA A1500</div>
+                  <div class="deals_of_the_day_item_discount">Flat 830 off</div>
+                  <div class="deals_disclaimer">Now 999</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="items_image_deals_of_the_day d-flex flex-column align-items-center justify-content-center">
+                  <a href="#"><img src="./Deals_of_the_day/metronaut.png" width="200px" height="200px" alt=""></a>
+                  <div class="deals_of_the_day_item_name">Metronaut, Provogue & Addidas</div>
+                  <div class="deals_of_the_day_item_discount">From 249+Extra10%Off</div>
+                  <div class="deals_disclaimer">Jackets, Dresses & More</div>
+                </div>
+              </div>
             </div>
-            <div class="items_image_deals_of_the_day d-flex flex-column align-items-center justify-content-center">
-              <a href="#"><img src="./Deals_of_the_day/watch.png" width="200px" height="200px" alt=""></a>
-              <div class="deals_of_the_day_item_name">casio, Fastrack, sonata</div>
-              <div class="deals_of_the_day_item_discount">Upto 80%+Extra 10%Off</div>
-              <div class="deals_disclaimer">Knockout Deals!</div>
-            </div>
-            <div class="items_image_deals_of_the_day d-flex flex-column align-items-center justify-content-center">
-              <a href="#"><img src="./Deals_of_the_day/temple.png" width="200px" height="200px" alt=""></a>
-              <div class="deals_of_the_day_item_name">Home Temples & more</div>
-              <div class="deals_of_the_day_item_discount">Extra 10% off</div>
-              <div class="deals_disclaimer">Space Saving furniture</div>
-            </div>
-            <div class="items_image_deals_of_the_day d-flex flex-column align-items-center justify-content-center ">
-              <a href="#"><img src="./Deals_of_the_day/tablet.png" width="200px" height="200px" alt=""></a>
-              <div class="deals_of_the_day_item_name">Premium Tablet Cases</div>
-              <div class="deals_of_the_day_item_discount">Extra 10% Off</div>
-              <div class="deals_disclaimer">For All Top Models</div>
-            </div>
-            <div class="items_image_deals_of_the_day d-flex flex-column align-items-center justify-content-center">
-              <a href="#"><img src="./Deals_of_the_day/decor.png" width="200px" height="200px" alt=""></a>
-              <div class="deals_of_the_day_item_name">Best Of Home Decor</div>
-              <div class="deals_of_the_day_item_discount">from 79</div>
-              <div class="deals_disclaimer">Lowest Price Ever</div>
-            </div>
-            <div class="items_image_deals_of_the_day d-flex flex-column align-items-center justify-content-center">
-              <a href="#"><img src="./Deals_of_the_day/metronaut.png" width="200px" height="200px" alt=""></a>
-              <div class="deals_of_the_day_item_name">Metronaut, Provogue & Addidas</div>
-              <div class="deals_of_the_day_item_discount">From 249+Extra10%Off</div>
-              <div class="deals_disclaimer">Jackets, Dresses & More</div>
-            </div>
-            <div class="items_image_deals_of_the_day d-flex flex-column align-items-center justify-content-center">
-              <a href="#"><img src="./Deals_of_the_day/lava.png" width="200px" height="200px" alt=""></a>
-              <div class="deals_of_the_day_item_name">LAVA A1500</div>
-              <div class="deals_of_the_day_item_discount">Flat 830 off</div>
-              <div class="deals_disclaimer">Now 999</div>
-            </div>
-            <div class="items_image_deals_of_the_day d-flex flex-column align-items-center justify-content-center">
-              <a href="#"><img src="./Deals_of_the_day/lava1.png" width="200px" height="200px" alt=""></a>
-              <div class="deals_of_the_day_item_name">LAVA A1500</div>
-              <div class="deals_of_the_day_item_discount">Flat 830 off</div>
-              <div class="deals_disclaimer">Now 999</div>
-            </div>
-            <div class="items_image_deals_of_the_day d-flex flex-column align-items-center justify-content-center">
-              <a href="#"><img src="./Deals_of_the_day/metronaut.png" width="200px" height="200px" alt=""></a>
-              <div class="deals_of_the_day_item_name">Metronaut, Provogue & Addidas</div>
-              <div class="deals_of_the_day_item_discount">From 249+Extra10%Off</div>
-              <div class="deals_disclaimer">Jackets, Dresses & More</div>
-            </div>
-            <div class="right_scroll">
-              <button>❯</button>
-            </div>
+            <!-- <div class="right_scroll owl-next">
+                <button class="owl-next">❯</button>
+            </div> -->
           </div>
         </div>
         <div class=" big-billion col-2">
@@ -188,49 +268,116 @@
           </div>
         </div>
         <div class="music-item d-flex align-items-center mt-2 mb-3 pb-2">
-          <div class="left_scroll align-middle">
-            <button>❮</button>
-          </div>
-          <div class="items_image_deals_of_the_day">
-            <a href="#"><img src="./book _and_music_instrument/harmonium.png" width="200px" height="200px" alt=""></a>
-            <div class="deals_of_the_day_item_name">Harmoniums</div>
-            <div class="deals_of_the_day_item_discount">Up to 60% Off</div>
-            <div class="deals_disclaimer">Shop Now!</div>
-          </div>
-          <div class="items_image_deals_of_the_day">
-            <a href="#"><img src="./book _and_music_instrument/flute.png" width="200px" height="200px" alt=""></a>
-            <div class="deals_of_the_day_item_name">Flutes</div>
-            <div class="deals_of_the_day_item_discount">Up to 60% Off</div>
-            <div class="deals_disclaimer">Shop Now!</div>
-          </div>
-          <div class="items_image_deals_of_the_day">
-            <a href="#"><img src="./book _and_music_instrument/A_guitar.png" width="200px" height="200px" alt=""></a>
-            <div class="deals_of_the_day_item_name">Acoustic Guitars</div>
-            <div class="deals_of_the_day_item_discount">Starting 1799</div>
-            <div class="deals_disclaimer">Shop Now!</div>
-          </div>
-          <div class="items_image_deals_of_the_day">
-            <a href="#"><img src="./book _and_music_instrument/musical_Accessories.png" width="200px" height="200px"
-                alt=""></a>
-            <div class="deals_of_the_day_item_name">Musical Accessories</div>
-            <div class="deals_of_the_day_item_discount">Up to 80% Off</div>
-            <div class="deals_disclaimer">Shop Now!</div>
-          </div>
-          <div class="items_image_deals_of_the_day">
-            <a href="#"><img src="./book _and_music_instrument/microphone_accessories.png" width="200px" height="200px"
-                alt=""></a>
-            <div class="deals_of_the_day_item_name">Microphone Accessories</div>
-            <div class="deals_of_the_day_item_discount">Up to 80% Off</div>
-            <div class="deals_disclaimer">Shop Now!</div>
-          </div>
-          <div class="right_scroll">
-            <button>❯</button>
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <div class="items_image_deals_of_the_day d-flex flex-column align-items-center justify-content-center">
+                <a href="#"><img src="./book _and_music_instrument/harmonium.png" width="200px" height="200px"
+                    alt=""></a>
+                <div class="d-flex justify-content-center flex-column align-items-center">
+                  <div class="deals_of_the_day_item_name">Harmoniums</div>
+                  <div class="deals_of_the_day_item_discount">Up to 60% Off</div>
+                  <div class="deals_disclaimer">Shop Now!</div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="items_image_deals_of_the_day d-flex flex-column align-items-center justify-content-center">
+                <a href="#"><img src="./book _and_music_instrument/flute.png" width="200px" height="200px" alt=""></a>
+                <div class="d-flex justify-content-center flex-column align-items-center">
+                  <div class="deals_of_the_day_item_name">Flutes</div>
+                  <div class="deals_of_the_day_item_discount">Up to 60% Off</div>
+                  <div class="deals_disclaimer">Shop Now!</div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="items_image_deals_of_the_day d-flex flex-column align-items-center justify-content-center">
+                <a href="#"><img src="./book _and_music_instrument/A_guitar.png" width="200px" height="200px"
+                    alt=""></a>
+                <div class="d-flex justify-content-center flex-column align-items-center">
+                  <div class="deals_of_the_day_item_name">Acoustic Guitars</div>
+                  <div class="deals_of_the_day_item_discount">Starting 1799</div>
+                  <div class="deals_disclaimer">Shop Now!</div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="items_image_deals_of_the_day d-flex flex-column align-items-center justify-content-center">
+                <a href="#"><img src="./book _and_music_instrument/musical_Accessories.png" width="200px" height="200px"
+                    alt=""></a>
+                <div class="d-flex justify-content-center flex-column align-items-center">
+                  <div class="deals_of_the_day_item_name">Musical Accessories</div>
+                  <div class="deals_of_the_day_item_discount">Up to 80% Off</div>
+                  <div class="deals_disclaimer">Shop Now!</div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="items_image_deals_of_the_day d-flex flex-column align-items-center justify-content-center">
+                <a href="#"><img src="./book _and_music_instrument/microphone_accessories.png" width="200px"
+                    height="200px" alt=""></a>
+                <div class="d-flex justify-content-center flex-column align-items-center">
+                  <div class="deals_of_the_day_item_name">Microphone Accessories</div>
+                  <div class="deals_of_the_day_item_discount">Up to 80% Off</div>
+                  <div class="deals_disclaimer">Shop Now!</div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="items_image_deals_of_the_day d-flex flex-column align-items-center justify-content-center">
+                <a href="#"><img src="./book _and_music_instrument/musical_Accessories.png" width="200px" height="200px"
+                    alt=""></a>
+                <div class="d-flex justify-content-center flex-column align-items-center">
+                  <div class="deals_of_the_day_item_name">Musical Accessories</div>
+                  <div class="deals_of_the_day_item_discount">Up to 80% Off</div>
+                  <div class="deals_disclaimer">Shop Now!</div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="items_image_deals_of_the_day d-flex flex-column align-items-center justify-content-center">
+                <a href="#"><img src="./book _and_music_instrument/musical_Accessories.png" width="200px" height="200px"
+                    alt=""></a>
+                <div class="d-flex justify-content-center flex-column align-items-center">
+                  <div class="deals_of_the_day_item_name">Musical Accessories</div>
+                  <div class="deals_of_the_day_item_discount">Up to 80% Off</div>
+                  <div class="deals_disclaimer">Shop Now!</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: false,
+      margin: 0,
+      nav: true,
+      dots: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1024: {
+          items: 4
+        },
+        1400: {
+          items: 5
+        }
+      }
+    });
+  </script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
