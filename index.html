@@ -174,7 +174,7 @@
           </div>
 
           <div class="deals-item d-flex align-items-center col-12 mt-2 pt-1 pb-5">
-            <div class="owl-carousel owl-theme">
+            <div class="owl-carousel owl-carousel1 owl-theme">
               <div class="item">
                 <div class="items_image_deals_of_the_day d-flex flex-column align-items-center justify-content-center">
                   <a href="#"><img src="./Deals_of_the_day/watch.png" width="200px" height="200px" alt=""></a>
@@ -268,7 +268,7 @@
           </div>
         </div>
         <div class="music-item d-flex align-items-center mt-2 mb-3 pb-2">
-          <div class="owl-carousel owl-theme">
+          <div class="owl-carousel owl-carousel2 owl-theme">
             <div class="item">
               <div class="items_image_deals_of_the_day d-flex flex-column align-items-center justify-content-center">
                 <a href="#"><img src="./book _and_music_instrument/harmonium.png" width="200px" height="200px"
@@ -357,7 +357,27 @@
     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script>
-    $('.owl-carousel').owlCarousel({
+    $('.owl-carousel1').owlCarousel({
+      loop: false,
+      margin: 0,
+      nav: true,
+      dots: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1024: {
+          items: 3
+        },
+        1400: {
+          items: 5
+        }
+      }
+    });
+    $('.owl-carousel2').owlCarousel({
       loop: false,
       margin: 0,
       nav: true,
@@ -373,7 +393,7 @@
           items: 4
         },
         1400: {
-          items: 5
+          items: 6
         }
       }
     });
