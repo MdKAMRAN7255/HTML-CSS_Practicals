@@ -39,8 +39,15 @@
                         <div class="login_button">
                             <button class="login">Login</button>
                         </div>
-                        <div class="menu">
+                        <div class="menu dropdown">
                             <a href="#">More</a><span id="menu-arrow">&#x2304;</span>
+                            <div class="dropdown-content">
+                                <p>Hello World!</p>
+                                <hr>
+                                <p>Hello World!</p>
+                                <hr>
+                                <p>Hello World!</p>
+                            </div>
                         </div>
                         <div class="cart">
                             <a href="#"> <img src="./navbar/cart.png" width="15px" height="15px" alt=""><span>
@@ -106,7 +113,7 @@
                             </div>
                         </div>
                         <div class="items_deals_of_the_day">
-                            <div class="owl-carousel owl-theme">
+                            <div class="owl-carousel owl-carousel1 owl-theme">
                                 <div class="item">
                                     <div class="items_image_deals_of_the_day">
                                         <a href="#"><img src="./Deals_of_the_day/temple.png" width="200px" height="200px" alt=""></a>
@@ -182,7 +189,7 @@
                     </div>
                 </div>
                 <div class="book-musical-instrument-items">
-                    <div class="owl-carousel owl-theme music">
+                    <div class="owl-carousel owl-carousel2 owl-theme music">
                         <div class="item">
                             <div class="items_image_deals_of_the_day">
                                 <a href="#"><img src="./book _and_music_instrument/harmonium.png" width="200px" height="200px"
@@ -239,7 +246,7 @@
     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script>
-    $('.owl-carousel').owlCarousel({
+    $('.owl-carousel1').owlCarousel({
       loop: false,
       margin: 0,
       nav: true,
@@ -259,7 +266,7 @@
         }
       }
     });
-    $('.owl-carousel').owlCarousel({
+    $('.owl-carousel2').owlCarousel({
       loop: false,
       margin: 0,
       nav: true,
@@ -272,10 +279,10 @@
           items: 3
         },
         1024: {
-          items: 4
+          items: 5
         },
         1400: {
-          items: 5
+          items: 6
         }
       }
     });
